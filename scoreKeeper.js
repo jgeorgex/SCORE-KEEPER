@@ -1,12 +1,17 @@
 class ScoreKeeper {
+  constructor() {
+    this.teamAScore = 0;
+    this.teamBScore = 0;
+  }
+
   scoreTeamA1() {
-    return 1;
+    this.teamAScore += 1;
   }
   scoreTeamA2() {
-    return 2;
+    this.teamAScore += 2;
   }
   scoreTeamA3() {
-    return 3;
+    this.teamAScore += 3;
   }
   scoreTeamB1() {
     return 1;

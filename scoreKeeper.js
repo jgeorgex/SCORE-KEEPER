@@ -22,6 +22,10 @@ class ScoreKeeper {
   scoreTeamB3() {
     return 3;
   }
+
+  getScore() {
+    return '000:000';
+  }
 }
 
 module.exports = ScoreKeeper;

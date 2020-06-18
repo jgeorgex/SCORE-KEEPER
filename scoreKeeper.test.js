@@ -29,7 +29,7 @@ describe('keeps score for teams', () => {
     expect(sk.scoreTeamB3()).toBe(3);
   });
 
-  //   it("Get's the score for Team A and B", () => {
-  //     expect(sk.getScore()).toBe('000:000');
-  //   });
+  it("Get's the score for Team A and B", () => {
+    expect(sk.getScore()).toBe('000:000');
+  });
 });

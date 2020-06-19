@@ -20,7 +20,7 @@ class ScoreKeeper {
     this.teamBScore += 2;
   }
   scoreTeamB3() {
-    return 3;
+    this.teamBScore += 3;
   }
 
   getScore() {

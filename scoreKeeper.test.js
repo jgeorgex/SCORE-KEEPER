@@ -23,7 +23,8 @@ describe('keeps score for teams', () => {
   });
 
   it('Scores 2 points for Team B', () => {
-    expect(sk.scoreTeamB2()).toBe(2);
+    sk.scoreTeamB2();
+    expect(sk.teamBScore).toBe(3);
   });
 
   it('Scores 3 points for Team B', () => {

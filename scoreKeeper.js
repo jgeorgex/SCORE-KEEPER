@@ -24,7 +24,11 @@ class ScoreKeeper {
   }
 
   getScore() {
-    return '000:000';
+    let scoreA = this.teamAScore.toString();
+    let scoreB = this.teamBScore.toString();
+
+    let result = '00' + scoreA + ':' + '00' + scoreB;
+    return result;
   }
 }
 

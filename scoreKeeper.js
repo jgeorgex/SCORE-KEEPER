@@ -26,7 +26,12 @@ class ScoreKeeper {
   getScore() {
     let scoreA = this.teamAScore.toString();
     let scoreB = this.teamBScore.toString();
-    let result = '00' + scoreA + ':' + '00' + scoreB;
+    let result;
+    if (scoreA.length === 2) {
+      result = '0' + scoreA + ':' + '00' + scoreB;
+    } else {
+      result = '00' + scoreA + ':' + '00' + scoreB;
+    }
     return result;
   }
 }

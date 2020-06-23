@@ -86,4 +86,38 @@ describe('keeps score for teams', () => {
     sk.scoreTeamA3();
     expect(sk.getScore()).toBe('101:010');
   });
+
+  it("Get's the score for Team A and B", () => {
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    sk.scoreTeamB3();
+    expect(sk.getScore()).toBe('101:100');
+  });
 });

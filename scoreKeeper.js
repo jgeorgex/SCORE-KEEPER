@@ -33,6 +33,8 @@ class ScoreKeeper {
       result = '0' + scoreA + ':' + '0' + scoreB;
     else if (scoreA.length === 3 && scoreB.length === 2)
       result = scoreA + ':' + '0' + scoreB;
+    else if (scoreA.length === 3 && scoreB.length === 3)
+      result = scoreA + ':' + scoreB;
     else {
       result = '00' + scoreA + ':' + '00' + scoreB;
     }

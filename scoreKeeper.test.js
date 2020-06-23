@@ -46,4 +46,10 @@ describe('keeps score for teams', () => {
     sk.scoreTeamA3();
     expect(sk.getScore()).toBe('011:006');
   });
+
+  it("Get's the score for Team A and B", () => {
+    sk.scoreTeamB1();
+    sk.scoreTeamB3();
+    expect(sk.getScore()).toBe('011:010');
+  });
 });

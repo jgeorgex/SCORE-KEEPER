@@ -1,4 +1,4 @@
-const ScoreKeeper = require('./scoreKeeper');
+const ScoreKeeper = require('../js/scoreKeeper');
 
 let sk = null;
 

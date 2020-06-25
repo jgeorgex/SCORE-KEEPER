@@ -84,3 +84,9 @@ describe('keeps score for teams', () => {
     expect(sk.getScore()).toBe('101:104');
   });
 });
+
+describe('padStart', () => {
+  it('pads out string', () => {
+    expect(sk.pad('12', 3, '0')).toBe('012');
+  });
+});

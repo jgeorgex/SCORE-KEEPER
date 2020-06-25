@@ -23,6 +23,13 @@ class ScoreKeeper {
     this.teamBScore += 3;
   }
 
+  pad(score, length, filler) {
+    if (score.length < length) {
+      let newScore = filler.concat(score);
+      return newScore;
+    }
+  }
+
   getScore() {
     let scoreA = this.teamAScore.toString();
     let scoreB = this.teamBScore.toString();

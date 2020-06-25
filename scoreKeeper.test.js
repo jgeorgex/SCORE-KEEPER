@@ -85,8 +85,16 @@ describe('keeps score for teams', () => {
   });
 });
 
-describe('padStart', () => {
-  it('pads out string', () => {
+describe('pad method', () => {
+  it('pads out string with score length of 2', () => {
     expect(sk.pad('12', 3, '0')).toBe('012');
+  });
+
+  it('pads out string with score length of 1', () => {
+    expect(sk.pad('1', 3, '0')).toBe('001');
+  });
+
+  it('pads out string with score length of 3', () => {
+    expect(sk.pad('123', 3, '0')).toBe('123');
   });
 });

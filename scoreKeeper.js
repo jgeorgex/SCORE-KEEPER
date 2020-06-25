@@ -24,8 +24,10 @@ class ScoreKeeper {
   }
 
   pad(score, length, filler) {
-    if (score.length < length) {
-      let newScore = filler.concat(score);
+    if (score.length <= length) {
+      let padLength = length - score.length;
+      let newFiller = filler.repeat(padLength);
+      let newScore = newFiller.concat(score);
       return newScore;
     }
   }

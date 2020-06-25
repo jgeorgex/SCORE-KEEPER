@@ -78,10 +78,57 @@ describe('keeps score for teams', () => {
     expect(sk.getScore()).toBe('101:014');
   });
 
-  it("Get's the score for Team A and B", () => {
-    times(() => sk.scoreTeamA1(), 101);
-    times(() => sk.scoreTeamB1(), 104);
-    expect(sk.getScore()).toBe('101:104');
+  it("Get's the score for Team A and B 000:000", () => {
+    expect(sk.getScore()).toBe('000:000');
+  });
+
+  it("Get's the score for Team A and B 000:001", () => {
+    sk.scoreTeamB1();
+    expect(sk.getScore()).toBe('000:001');
+  });
+
+  it("Get's the score for Team A and B 000:011", () => {
+    times(() => sk.scoreTeamB1(), 11);
+    expect(sk.getScore()).toBe('000:011');
+  });
+
+  it("Get's the score for Team A and B 000:111", () => {
+    times(() => sk.scoreTeamB1(), 111);
+    expect(sk.getScore()).toBe('000:111');
+  });
+
+  it("Get's the score for Team A and B 001:011", () => {
+    times(() => sk.scoreTeamA1(), 1);
+    times(() => sk.scoreTeamB1(), 11);
+    expect(sk.getScore()).toBe('001:011');
+  });
+
+  it("Get's the score for Team A and B 001:111", () => {
+    times(() => sk.scoreTeamA1(), 11);
+    expect(sk.getScore()).toBe('011:000');
+  });
+
+  it("Get's the score for Team A and B 001:111", () => {
+    times(() => sk.scoreTeamA1(), 1);
+    times(() => sk.scoreTeamB1(), 111);
+    expect(sk.getScore()).toBe('001:111');
+  });
+
+  it("Get's the score for Team A and B 001:111", () => {
+    times(() => sk.scoreTeamA1(), 11);
+    times(() => sk.scoreTeamB1(), 111);
+    expect(sk.getScore()).toBe('011:111');
+  });
+
+  it("Get's the score for Team A and B 111:000", () => {
+    times(() => sk.scoreTeamA1(), 111);
+    expect(sk.getScore()).toBe('111:000');
+  });
+
+  it("Get's the score for Team A and B 111:001", () => {
+    times(() => sk.scoreTeamA1(), 111);
+    sk.scoreTeamB1();
+    expect(sk.getScore()).toBe('111:001');
   });
 });
 

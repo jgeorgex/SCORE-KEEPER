@@ -85,7 +85,7 @@ describe('keeps score for teams', () => {
   });
 });
 
-describe('pad method', () => {
+describe('Pad Method', () => {
   it('pads out string with score length of 2', () => {
     expect(sk.pad('12', 3, '0')).toBe('012');
   });

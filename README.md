@@ -30,3 +30,13 @@ create scoreTeamB1() function. <br>
 create scoreTeamB2() function. <br>
 create scoreTeamB3() function. <br>
 create getScore() function.
+
+## Notes / TBC
+
+Task is completed acording to spec given. Things of note / to do / improve when time allows...
+
+1. Add user guide including how to run tests.
+2. Edge case test - what if score goes in to 4 digits? <br>
+3. Move pad method out of ScoreKeeper class (S.R.P) <br>
+4. Naming and use of describe blocks in tests. <br>
+5. Naming in ScoreKeeper class. <br>

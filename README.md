@@ -1,8 +1,13 @@
-This is a Kata challenge orginally taken from [Kata-Log](https://kata-log.rocks/score-keeper-kata)
+This is a Kata challenge originally taken from [Kata-Log](https://kata-log.rocks/score-keeper-kata) and completed using:
+
+1.  JavaScript
+2.  Jest
+3.  Github
+4.  Visual Studio Code
 
 ## Problem
 
-We need software to deliver the proper data to the scoreboard for a basketball team. Unfortunately the people using our software are not the brightest lights under the sun, so they need six buttons (each team can score either 1, 2 or 3 points with a single shot).
+We need software to deliver the proper data to the scoreboard for a basketball team. Unfortunately, the people using our software are not the brightest lights under the sun, so they need six buttons (each team can score either 1, 2 or 3 points with a single shot).
 
 ## Task
 
@@ -25,7 +30,7 @@ The returned String always has seven characters. An example would be 000:000
 ### Setup
 
 1. Clone or download the repository to your local machine.
-2. In the route directory of the project run '\$ npm install' to install required dependancies.
+2. In the route directory of the project run '\$ npm install' to install required dependencies.
 
 ### Tests
 
@@ -65,9 +70,11 @@ create getScore() function.
 
 ## Notes / TBC
 
-The Kata is completed acording to spec given. Things of note / to do / improve when time allows...
+The Kata is completed according to specification given.
 
-1. Edge case test - what if score goes in to 4 digits? <br>
+Things of note/to do/improve when time allows...
+
+1. Edge case test - what if score goes into 4 digits? <br>
 2. Move pad method out of ScoreKeeper class (S.R.P) <br>
 3. Naming and use of describe blocks in tests. <br>
 4. Naming in ScoreKeeper class. <br>

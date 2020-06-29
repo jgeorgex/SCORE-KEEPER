@@ -1,10 +1,10 @@
-A Kata challenge orginally taken from [Kata-Log](https://kata-log.rocks/score-keeper-kata)
+This is a Kata challenge orginally taken from [Kata-Log](https://kata-log.rocks/score-keeper-kata)
 
 ## Problem
 
 We need software to deliver the proper data to the scoreboard for a basketball team. Unfortunately the people using our software are not the brightest lights under the sun, so they need six buttons (each team can score either 1, 2 or 3 points with a single shot).
 
-## Your Task
+## Task
 
 Write a class ScoreKeeper which offers following methods:
 
@@ -20,7 +20,39 @@ String getScore() <br>
 
 The returned String always has seven characters. An example would be 000:000
 
-## TDD Approach/Plan
+## User Guide
+
+### Setup
+
+1. Clone or download the repository to your local machine.
+2. In the route directory of the project run '\$ npm install' to install required dependancies.
+
+### Tests
+
+1. In the route directory of the project run '\$ npm test' to run tests written with Jest.
+
+### Running the program
+
+1.  Create a new score keeper: <br>
+    `sk = new ScoreKeeper();`
+
+2.  Score 1 point for Team A: <br>
+    `sk.scoreTeamA1();`
+
+3.  You can check the state and that the score has been saved: <br>
+    `sk` <br>
+    This will display: <br>
+    `ScoreKeeper {teamAScore: 1, teamBScore: 0}`
+
+4.  Score 3 points for Team B: <br>
+    `sk.scoreTeamB3();`
+
+5.  Get the score in the correct format:
+    `sk.getScore()`
+    This will display: <br>
+    `"001:003"`
+
+## My TDD Approach/Plan
 
 create ScoreKeeper class. <br>
 create scoreTeamA1() function. <br>
@@ -33,10 +65,9 @@ create getScore() function.
 
 ## Notes / TBC
 
-Task is completed acording to spec given. Things of note / to do / improve when time allows...
+The Kata is completed acording to spec given. Things of note / to do / improve when time allows...
 
-1. Add user guide including how to run tests.
-2. Edge case test - what if score goes in to 4 digits? <br>
-3. Move pad method out of ScoreKeeper class (S.R.P) <br>
-4. Naming and use of describe blocks in tests. <br>
-5. Naming in ScoreKeeper class. <br>
+1. Edge case test - what if score goes in to 4 digits? <br>
+2. Move pad method out of ScoreKeeper class (S.R.P) <br>
+3. Naming and use of describe blocks in tests. <br>
+4. Naming in ScoreKeeper class. <br>
